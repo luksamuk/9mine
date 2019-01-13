@@ -2,7 +2,7 @@
 
 %:  %.c
     8c -c $stem.c
-    8l -o $stem $stem.o
+    8l -o $stem $stem.8
 
 clean:
     rm *.o

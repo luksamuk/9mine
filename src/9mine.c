@@ -204,7 +204,7 @@ get_coord_input(void)
         char *str;
         str = Brdline(&bstdin, 10);
         int len = Blinelen(&bstdin) - 1;
-        if(str == NULL)
+        if(str == 0)
             return -1;
         str[len] = '\0';
         column = atoi(str) - 1;
@@ -343,7 +343,7 @@ repl(void)
 void
 main(int argc, char** argv)
 {
-    srand(time(NULL));
+    srand(time(0));
 
     /* Detect debug flag */
     int i;

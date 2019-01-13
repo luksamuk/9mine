@@ -22,7 +22,12 @@ to the compiler used so it runs on your architecture.
 
 * Support
 
-TO-DO.
+This program was tested on the following systems:
+
+- Void Linux x86_64 (with plan9port);
+- 9front "Run From Zone" (2018/09/09).
+
+I did not test it on other Plan 9 distributions. If you do, give me a heads up.
 
 * Issues
 
