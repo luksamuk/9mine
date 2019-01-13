@@ -1,4 +1,12 @@
 </$objtype/mkfile
-OFILES=9mine.$O
-</sys/src/cmd/mkone
 
+BIN=/$objtype/bin/games
+
+9mine:	9mine.$O
+	$LD -o $target $prereq
+
+install: 9mine
+	 mv 9mine $BIN
+
+%.$O:	 %.c
+	 $CC $CFLAGS $stem.c

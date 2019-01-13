@@ -17,8 +17,28 @@ it to learn more about how to write C programs for this OS.
 You can either build this program for Plan 9 (using ~mk~) or for Linux (using
 ~make~ and ~plan9port~). All you need to do is compile the ~9mine.c~ file.
 
-Running ~mk~ or ~make~ on the folder should suffice, however pay close attention
-to the compiler used so it runs on your architecture.
+** On 9front
+
+~cd~ to the ~src~ folder, then run ~mk~. This will build a ~9mine~ application.
+
+If you wish to install it to your system, just run ~mk install~. This will move
+your application to your architecture's ~bin/games~ folder. You will then be able
+to launch it using ~games/9mine~.
+
+Cross-compilation is also possible through ~mk~. For example, to build the game
+for amd64, just run ~objtype=amd64 mk~. The rest can be figured out from 9front's
+FQA and the manpages.
+
+** On Linux
+
+Make sure you have ~plan9port~ installed, and ~9c~ / ~9l~ are present in your ~$PATH~.
+
+~cd~ to the ~src~ folder, then run ~make~. This will produce a ~9mine~ executable for
+your system's architecture.
+
+No installation means were provided for Linux, however it should be portable
+enough. The produced binary should have all Plan 9-related libraries statically
+linked already.
 
 * Usage
 
