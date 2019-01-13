@@ -1,7 +1,8 @@
 #+TITLE:    9mine
 #+AUTHOR:   Lucas Vieira <lucasvieira@lisp.com.br>
-#+SUBTITLE: Console Minesweeper clone for Plan 9.
 #+STARTUP:  showall inlineimages
+
+Console Minesweeper clone for Plan 9 from Bell Labs.
 
 [[./9mine.gif]]
 
@@ -18,6 +19,15 @@ You can either build this program for Plan 9 (using ~mk~) or for Linux (using
 
 Running ~mk~ or ~make~ on the folder should suffice, however pay close attention
 to the compiler used so it runs on your architecture.
+
+* Support
+
+TO-DO.
+
+* Issues
+
+- [ ] Display flag and bomb count
+- [ ] Add game winning logic
 
 * License
 
