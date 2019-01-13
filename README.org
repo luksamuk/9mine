@@ -1,0 +1,26 @@
+#+TITLE:    9mine
+#+AUTHOR:   Lucas Vieira <lucasvieira@lisp.com.br>
+#+SUBTITLE: Console Minesweeper clone for Plan 9.
+#+STARTUP:  showall inlineimages
+
+[[./9mine.gif]]
+
+* Introduction
+
+This is a console port of Minesweeper for Plan 9. The main goal was to build a
+small game which would satisfactorily run on Plan 9, while taking advantage of
+it to learn more about how to write C programs for this OS.
+
+* Building
+
+You can either build this program for Plan 9 (using ~mk~) or for Linux (using
+~make~ and ~plan9port~). All you need to do is compile the ~9mine.c~ file.
+
+Running ~mk~ or ~make~ on the folder should suffice, however pay close attention
+to the compiler used so it runs on your architecture.
+
+* License
+
+This program is free software, distributed under the BSD 2-Clause License.
+Copyright (C) 2019 Lucas Vieira.
+

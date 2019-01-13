@@ -1,0 +1,9 @@
+9mine: 9mine.c
+
+%:  %.c
+    8c -c $stem.c
+    8l -o $stem $stem.o
+
+clean:
+    rm *.o
+
