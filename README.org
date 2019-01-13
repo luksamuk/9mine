@@ -20,6 +20,19 @@ You can either build this program for Plan 9 (using ~mk~) or for Linux (using
 Running ~mk~ or ~make~ on the folder should suffice, however pay close attention
 to the compiler used so it runs on your architecture.
 
+* Usage
+
+The interface is pretty straightforward, as you can see on the gif. CLI will
+guide you.
+
+You can either step at an uncovered spot, put flags or doubts, and quit the
+game.
+
+Passing the ~-d~ flag will start the game in Debug Mode, so you'll get a Godview
+option to see all numbers and bombs in runtime as well.
+
+Quitting the game will point the bombs in your current field.
+
 * Support
 
 This program was tested on the following systems:
@@ -33,6 +46,11 @@ I did not test it on other Plan 9 distributions. If you do, give me a heads up.
 
 - [ ] Display flag and bomb count
 - [ ] Add game winning logic
+
+* Thanks
+
+Thanks to Ricardo Lanziano ([[https://github.com/arpunk][arpunk]]) for explaining a lot about Plan 9 stuff to
+me.
 
 * License
 

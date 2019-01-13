@@ -2,8 +2,6 @@
 #include <libc.h>
 #include <bio.h>
 
-#pragma lib "libbio.a"
-
 /* Play field */
 #define FIELD_SIDE 16
 #define FIELD_MAX_LETTER 'p'
@@ -329,14 +327,10 @@ repl(void)
             should_print = 0;
             break;
         }
-                
-        
+        print("\n");
     } while(!QUIT);
     print_field();
 }
-
-
-
 
 
 
@@ -346,12 +340,11 @@ main(int argc, char** argv)
     srand(time(0));
 
     /* Detect debug flag */
-    int i;
-    for(i = 1; i < argc; i++)
-        if(!strncmp(argv[i], "--debug", 7)) {
+    ARGBEGIN {
+        case 'd':
             DEBUG = 1;
             break;
-        }
+    } ARGEND
     
 
     /* Initialize input */
