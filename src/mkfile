@@ -1,4 +1,4 @@
 </$objtype/mkfile
-OFILES=9mine.$0
+OFILES=9mine.$O
 </sys/src/cmd/mkone
 
